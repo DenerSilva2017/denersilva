@@ -4,11 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dener Silva - Site pessoal</title>
+    <meta name="description" content="Desenvolvimento Web">
+    <link rel="icon" href="img/fav.png">
+    <!-- CSS DO MATERIALIZE -->
+    <link rel="stylesheet" href="css/materialize.css">
+    <!-- CSS CUSTOMIZADO -->
     <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
-    <div id="particles-js"></div>
+    <div id="particles-js">
+        <div class="btext container">
+            <h3>Dener Silva</h3>
+            <h5 class="digitado">Desenvolvedor de Aplicações Web</h5>
+            <h6>Sou um profissional da área de TI, apto para desenvolver sites modernos, prestar serviços de infraestrutura de rede e servidores, e auxiliar no desenvolvimento de sistemas front-end.</h6>
+        </div>
+    </div>
 
+    <!-- JS EFEITO DIGITAÇÃO -->
+    <script>
+        function typeWriter(elemento) {
+           const textoArray = elemento.innerHTML.split('');
+           elemento.innerHTML = '';
+           for(let i = 0; i < textoArray.length; i++) {
+             setTimeout(() => elemento.innerHTML += textoArray[i], 75 * i);
+           }
+         }
+      
+        const titulo = document.querySelector('.digitado');
+        typeWriter(titulo);
+        //typeWriter(document.querySelector('h6'));
+    </script>
+
+    <!-- JQUERY  -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+
+    <!-- JS MATERIALIZE -->
+    <script src="js/materialize.js"></script>
+    
+    <!-- SCRIPT JAVASCRIP PARA O EFEITO PARTICLE.JS -->
     <script type="text/javascript" src="js/particles.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
 </body>

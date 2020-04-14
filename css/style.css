@@ -6,5 +6,40 @@ body{
 
 #particles-js{
     height: 100%;
-    background-image: url(../img/image1.jpg);
+    /*    background-image: url(../img/image1.jpg); */
+    background: #0A122A;
 }
+
+.btext{
+  color: #fff;
+  position: absolute;
+  text-align: center;
+  right: 0;  
+  left: 0;
+  top: 20%;
+  /*padding: 30px;*/
+  /*width: 100%;*/
+  line-height: 0.4rem;
+}
+
+/* EFEITO DIGITAÇÃO */
+.digitado::after {
+    content: '|';
+    opacity: 1;
+    margin-left: 5px;
+    display: inline-block;
+    animation: blink .7s infinite;
+  }
+
+  @keyframes blink {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+
+/* CUSTOMIZADO */
+
+/* MEDIA */
