@@ -19,7 +19,11 @@ body{
   top: 20%;
   /*padding: 30px;*/
   /*width: 100%;*/
-  line-height: 0.4rem;
+  /*line-height: 0.4rem;*/
+}
+
+h6{
+  line-height: 2;
 }
 
 /* EFEITO DIGITAÇÃO */
