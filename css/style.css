@@ -6,8 +6,7 @@ body{
 
 #particles-js{
     height: 100%;
-    /*    background-image: url(../img/image1.jpg); */
-    background: #0A122A;
+    background-image: url(../img/connectwork.png);
 }
 
 .btext{
@@ -16,7 +15,7 @@ body{
   text-align: center;
   right: 0;  
   left: 0;
-  top: 20%;
+  top: 10%;
   /*padding: 30px;*/
   /*width: 100%;*/
   /*line-height: 0.4rem;*/
