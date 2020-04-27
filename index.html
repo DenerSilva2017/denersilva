@@ -14,18 +14,92 @@
 
 </head>
 <body>
+    <section class="home scrollspy" id="home">
     <div id="particles-js">
         <div class="apresentacao container">
             <h3>Dener Silva</h3>
             <h5 class="digitado">Desenvolvedor de Aplicações Web</h5>
-            <h6>Sou um profissional da <span style="color: #01A9DB;">área de TI</span>, apto para desenvolver <span style="color: #FFBF00;">sites modernos</span>, prestar serviços de <span style="color: #FF0000;">infraestrutura de rede e servidores</span>, e auxiliar no desenvolvimento de <span style="color: #01DF01;"> sistemas front-end.</span></h6>  
-            
+            <h6>Sou um profissional da área de TI, apto para desenvolver sites modernos, prestar serviços de infraestrutura de rede e servidores, e auxiliar no desenvolvimento de sistemas front-end.</h6>  
             <div>
-                <a class="waves-effect waves-light btn">Meu curriculum</a>
-                <a class="waves-effect waves-light btn">Meu portfólio</a>
+                <a href="#portfolio" class="waves-effect waves-light btn">Meu portfólio</a>
+                <a href="#curriculum" class="waves-effect waves-light btn">Meu curriculum</a>
             </div>
         </div>
     </div>
+    </section>
+    <section class="portfolio bloco scrollspy" id="portfolio">
+        <article>
+            <h3 class="center">Portfólio</h3>
+            <div class="container">
+                <div class="row">
+                    <article class="col s12 m6 l3">
+                        <div class="card black-text">
+                            <div class="card-image">
+                                <img src="img/pilates.jpg" alt="Pilates" class="materialboxed">
+                                <a href="#pilates-modal" class="btn btn-floating halfway-fab blue-logo modal-trigger">
+                                    <i class="material-icons">more_horiz</i>
+                                </a>
+                            </div>
+                            <div class="card-content">
+                                <h3 class="card-title center"> Pilates </h3>
+                                <p class="ligth black-text">Pilates é um método de controle muscular desenvolvido por Joseph Pilates...</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col s12 m6 l3">
+                        <div class="card black-text">
+                            <div class="card-image">
+                                <img src="img/pilates.jpg" alt="Pilates" class="materialboxed">
+                                <a href="#pilates-modal" class="btn btn-floating halfway-fab blue-logo modal-trigger">
+                                    <i class="material-icons">more_horiz</i>
+                                </a>
+                            </div>
+                            <div class="card-content">
+                                <h3 class="card-title center"> Pilates </h3>
+                                <p class="ligth black-text">Pilates é um método de controle muscular desenvolvido por Joseph Pilates...</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col s12 m6 l3">
+                        <div class="card black-text">
+                            <div class="card-image">
+                                <img src="img/pilates.jpg" alt="Pilates" class="materialboxed">
+                                <a href="#pilates-modal" class="btn btn-floating halfway-fab blue-logo modal-trigger">
+                                    <i class="material-icons">more_horiz</i>
+                                </a>
+                            </div>
+                            <div class="card-content">
+                                <h3 class="card-title center"> Pilates </h3>
+                                <p class="ligth black-text">Pilates é um método de controle muscular desenvolvido por Joseph Pilates...</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col s12 m6 l3">
+                        <div class="card black-text">
+                            <div class="card-image">
+                                <img src="img/pilates.jpg" alt="Pilates" class="materialboxed">
+                                <a href="#pilates-modal" class="btn btn-floating halfway-fab blue-logo modal-trigger">
+                                    <i class="material-icons">more_horiz</i>
+                                </a>
+                            </div>
+                            <div class="card-content">
+                                <h3 class="card-title center"> Pilates </h3>
+                                <p class="ligth black-text">Pilates é um método de controle muscular desenvolvido por Joseph Pilates...</p>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>    
+            </div>
+        </article>
+    </section>
+
+    <section class="curriculum bloco scrollspy" id="curriculum">
+        <article>
+            <h3 class="center">Curriculum</h3>
+        </article>
+    </section>
+
 
     <!-- JS EFEITO DIGITAÇÃO -->
     <script>
@@ -36,7 +110,6 @@
              setTimeout(() => elemento.innerHTML += textoArray[i], 75 * i);
            }
          }
-      
         const titulo = document.querySelector('.digitado');
         typeWriter(titulo);
         //typeWriter(document.querySelector('h6'));
@@ -51,5 +124,16 @@
     <!-- SCRIPT JAVASCRIP PARA O EFEITO PARTICLE.JS -->
     <script type="text/javascript" src="js/particles.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
+
+    <!-- SCROLLSPY -->
+    <script>
+    $(document).ready(function(){
+        // LINK INTERNO
+        $(".scrollspy").scrollSpy({
+            scrollOffset: 0,
+            throttle: 10
+        });
+    }) 
+    </script>
 </body>
 </html>

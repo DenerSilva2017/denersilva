@@ -1,12 +1,23 @@
-body{
-    margin: 0;
-    padding: 0;
-    height: 100vh;
+/*
+body, section{
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+*/
+
+html, body{
+  height: 100%;
+}
+
+.bloco{
+  min-height: 100%;
+  padding-top: 30px;
 }
 
 #particles-js{
-    height: 100%;
-    background-image: url(../img/connectwork.png);
+  height: 100vh;
+  background-image: url(../img/connectwork.png);
 }
 
 /* APRESENTAÇÃO */
@@ -19,6 +30,10 @@ body{
   top: 20%;
 }
 
+.apresentacao h3{
+  color: #00ffff;
+}
+
 .apresentacao h6{
   line-height: 2;
 }
@@ -26,7 +41,6 @@ body{
 .apresentacao a{
   top: 20px;
 }
-
 
 /* EFEITO DIGITAÇÃO */
 .digitado::after {
@@ -48,13 +62,42 @@ body{
 
 /* BOTÃO PRINCIPAL */
 .btn{
+  color:  #00ffff;
   background-color:rgba(226,216,216, .2);
 }
 
 .btn:hover, .btn-large:hover, .btn-small:hover {
-  background-color: rgba(244,249,132, .2);
-  
-  
+  background-color: grey;
+}  
+
+.btn:focus, .btn-large:focus, .btn-small:focus,
+.btn-floating:focus {
+  background-color: rgba(226,216,216, .2);
+}  
+
+/* PORTFÓLIO */
+.portfolio{
+  background: grey;
+}
+
+.portfolio h3{
+  color: #fff;
+  margin: 0;
+}
+
+/* CURRICULUM */
+.curriculum{
+  background: #CEECF5;
+}
+
+.curriculum h3{
+  color: #1C1C1C;
+  margin: 0;
+}
+
 /* CUSTOMIZADO */
+.row{
+  margin-bottom: 0;
+}
 
 /* MEDIA */
