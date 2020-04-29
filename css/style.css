@@ -1,11 +1,3 @@
-/*
-body, section{
-  margin: 0;
-  padding: 0;
-  height: 100vh;
-}
-*/
-
 html, body{
   height: 100%;
 }
@@ -60,7 +52,7 @@ html, body{
     }
   }
 
-/* BOTÃO PRINCIPAL */
+/* BOTÃO HOME */
 .btn{
   color:  #00ffff;
   background-color:rgba(226,216,216, .2);
@@ -75,24 +67,63 @@ html, body{
   background-color: rgba(226,216,216, .2);
 }  
 
-/* PORTFÓLIO */
-.portfolio{
-  background: grey;
-}
-
-.portfolio h3{
-  color: #fff;
-  margin: 0;
-}
-
-/* CURRICULUM */
-.curriculum{
+/* SOBRE MIM */
+.sobremim{
   background: #CEECF5;
 }
 
-.curriculum h3{
+.sobremim h3{
   color: #1C1C1C;
   margin: 0;
+}
+
+.sobremim .foto{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  }
+
+/* MEUS PROJETOSPORTFÓLIO */
+.meusprojetos{
+  background: grey;
+} 
+
+.meusprojetos h3{
+  color: #fff;
+  margin: 0;
+  padding-bottom: 30px;
+}
+
+.box{
+  background: #fff111;
+  position: relative;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #00ffff;
+}
+
+.box .content{
+  position: relative;
+  padding: 20px;
+}
+
+.box .content h2{
+  position: relative;
+  
+}
+
+.container .row .box:before{
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: - 2px;
+  background: #00ffff;  
+  transform: skew(2deg,2deg);
+  z-index: 1;
 }
 
 /* CUSTOMIZADO */
