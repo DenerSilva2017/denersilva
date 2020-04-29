@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="css/materialize.css">
     <!-- CSS CUSTOMIZADO -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- ÍCONES GOOGLE -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 </head>
 <body>
@@ -34,32 +36,46 @@
         <article>
             <div class="row container">
                 <div>
-                    <h3 class="center">Sobre mim</h3>
-                </div>
-                <div class="col s12 l3" style="background: blue;">
-                    <div class="foto center">
-                        <img class="materialboxed" width="200" src="img/denersilva.png" alt="Dener Silva">
+                    <h3 class="titulo center">Sobre mim</h3>
+                </div>  
+                <div class="col s12 l4">
+                    <div class="foto responsive-img">
+                        <img class="materialboxed" width="200"  src="img/denersilva.png" alt="Dener Silva">
                     </div>
                 </div>
-                <div class="col s12 l9" style="background: purple;">
-                    <h5 class="center">Olá, obrigado pela visita!</h5>
-                    <p>Sou estudante do curso de pós-graduação em Desenvolvimento de Aplicações Web, graduado em Análise e Desenvolvimento de Sistemas.</p>
-                    <p>Tenho experiência como Instrutor de Informática, Técnico de Informática, Analista de Sistemas e Desenvolvedor Web.</p> <br>
-                    <h5>Infra</h5>
-                    <p>texto sobre inraestrutura</p>
-                    <h5>Tecnologias, frameworks e ferramentas</h5>
-                    <p>JavaScript ES6; CSS3; HTML5, Git; Node.js; NPM; TypeScript; Angular; Sass; Bootstrap e Materialize.</p>
+                <div class="col s12 l8">
+                    <h5>Olá, obrigado pela visita!</h5>
+                    <p class="paragrafo">Sou estudante do curso de pós-graduação em Desenvolvimento de Aplicações Web, graduado em Análise e Desenvolvimento de Sistemas.</p>
+                    <p class="paragrafo">Tenho experiência como Instrutor de Informática, Técnico de Informática, Analista de Sistemas e Desenvolvedor Web.</p> <br>
                 </div>
+            </div>
+            <!-- COLLAPSIBLE -->
+            <div class="row container">
+                <h5>Minhas habilidades profissionais:</h5>
+                <ul class="collapsible">
+                    <li>
+                      <div class="collapsible-header"><i class="material-icons">filter_drama</i>Infraestrutura de redes e servidores</div>
+                      <div class="collapsible-body"><span>Sou apto a dar suporte, realizar a manutenção, instalar e manter serviços em servidores Windows e Linux. Administrar o Active Directory Domain Services (AD DS), além de outros serviços de rede, como gerenciamento e armazenamento de arquivos, gerenciamento de política de grupo usuário, virtualização, firewall, proxy, DHCP, monitoramento e backup.</span></div>
+                    </li>
+                    <li>
+                      <div class="collapsible-header"><i class="material-icons">place</i>Tecnologias, frameworks e ferramentas</div>
+                      <div class="collapsible-body"><span>Tenho conhecimento para trabalhar com: <br> JavaScript ES6; CSS3; HTML5, Git; Node.js; NPM; TypeScript; Angular; Sass; Bootstrap e Materialize.</span></div>
+                    </li>
+                    <li>
+                      <div class="collapsible-header"><i class="material-icons">whatshot</i>Cursos complementares</div>
+                      <div class="collapsible-body"><span> <strong>Em infraestrutura:</strong> <br> Hardware para Servidores; Infraestrutura de Rede; Cisco Packet Tracer; Adm. Windows Server 2008; Adm. Windows Server 2012; Adm. Windows Server 2016; Servidor Linux (Debian); Linux Ubuntu Server. <br> <br> <strong>Em desenvolvimento:</strong> <br>Desenvolvimento WEB com Javascript ES6, TypeScript e Angular 4. <br> Algoritmos; Banco de dados com MySQL; HTML5; PHP; POO PHP; Java; POO Java; Python; Git e GitHub.
+                        </span></div>
+                    </li>
+                </ul>
             </div>
         </article>
     </section>
 
-    <!-- SECTION PORTFÓLIO -->
+    <!-- SECTION MEUS PROJETOS -->
     <section class="meusprojetos bloco scrollspy" id="meusprojetos">
         <article>
-            <h3 class="center">Meus Projetos</h3>
-
             <div class="container">
+                <h3 class="center">Meus Projetos</h3>
                 <div class="row">
 
                     <article class="col s12 m6 l4">
@@ -71,30 +87,8 @@
                             </div>
                         </div>
                     </article>
-
-                    <article class="col s12 m6 l4">
-                        <div class="box">
-                            <div class="content">
-                                <h2>Infraestrutura</h2>
-                                <h3>Aqui um longo texto</h3>
-                                <p>Aqui um  texto ainda mais longo</p>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="col s12 m6 l4">
-                        <div class="box">
-                            <div class="content">
-                                <h2>Sistemas</h2>
-                                <h3>Aqui um longo texto</h3>
-                                <p>Aqui um  texto ainda mais longo</p>
-                            </div>
-                        </div>
-                    </article>
-
                 </div>    
             </div>
-
         </article>
     </section>
 
@@ -133,6 +127,8 @@
         });
         // MATERIALBOXED
         $('.materialboxed').materialbox();
+        // COLLAPSIBLE
+        $('.collapsible').collapsible();
         // MODAL 
         $(".modal").modal();
     }) 

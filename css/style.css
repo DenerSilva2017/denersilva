@@ -12,6 +12,25 @@ html, body{
   background-image: url(../img/connectwork.png);
 }
 
+/* TÍTULO E PARÁGRAFO */
+.titulo{
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.titulo::after{
+  content: '';
+  display: block; 
+  width: 200px;
+  border-top: 1px solid #ff0000;
+  margin: 15px auto;
+}
+
+.paragrafo{
+  line-height: 1.8rem;
+}
+
 /* APRESENTAÇÃO */
 .apresentacao{
   color: #fff;
@@ -77,13 +96,14 @@ html, body{
   margin: 0;
 }
 
-.sobremim .foto{
-  display: block;
+.sobremim .foto img{
   margin-left: auto;
   margin-right: auto;
-  }
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 
-/* MEUS PROJETOSPORTFÓLIO */
+/* MEUS PROJETOS */
 .meusprojetos{
   background: grey;
 } 
