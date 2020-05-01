@@ -108,44 +108,6 @@ html, body{
   background: grey;
 } 
 
-.meusprojetos h3{
-  color: #fff;
-  margin: 0;
-  padding-bottom: 30px;
-}
-
-.box{
-  background: #fff111;
-  position: relative;
-  height: 400px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid #00ffff;
-}
-
-.box .content{
-  position: relative;
-  padding: 20px;
-}
-
-.box .content h2{
-  position: relative;
-  
-}
-
-.container .row .box:before{
-  content: '';
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  right: -2px;
-  bottom: - 2px;
-  background: #00ffff;  
-  transform: skew(2deg,2deg);
-  z-index: 1;
-}
-
 /* CUSTOMIZADO */
 .row{
   margin-bottom: 0;
