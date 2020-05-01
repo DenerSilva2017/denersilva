@@ -108,6 +108,24 @@ html, body{
   background: grey;
 } 
 
+.meusprojetos .card {
+  transition: 0.5s;
+  background: #eee;
+}
+.meusprojetos .card h5 {
+  padding: 10px 0px;
+}
+.meusprojetos .card:hover i,
+.meusprojetos h5 {
+  color: #c2185b;
+}
+
+.projetos .card:hover {
+  transform: scale(1.03);
+  background: #fff;
+}
+
+
 /* CUSTOMIZADO */
 .row{
   margin-bottom: 0;
