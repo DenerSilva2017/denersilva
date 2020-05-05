@@ -13,16 +13,20 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- ÍCONES GOOGLE -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
 </head>
-<body>
+
+<body onload="carregar()">
     <!-- SECTION HOME -->
     <section class="home scrollspy" id="home">
     <div id="particles-js">
         <div class="apresentacao container">
             <h3>Dener Silva</h3>
             <h5 class="digitado">Desenvolvedor de Aplicações Web</h5>
-            <h6>Sou um profissional da área de TI, apto para desenvolver sites modernos, prestar serviços de infraestrutura de rede e servidores, e auxiliar no desenvolvimento de sistemas front-end.</h6>  
+            <h6> <strong> Olá, <span id="saudacao"></span> </strong> <br>
+            <br>Sou um profissional apto a prestar os seguintes serviços: 
+            <br>Desenvolvimento de Sites Modernos.
+            <br>Serviços de Infraestrutura de Redes e Servidores.
+            <br>Desenvolvimento front-end de Sistemas Web.</h6>  
             <div>
                 <a href="#sobremim" class="waves-effect waves-light btn">Sobre mim</a>
                 <a href="#meusprojetos" class="waves-effect waves-light btn">Meus projetos</a>
@@ -36,7 +40,7 @@
         <article>
             <div class="row container">
                 <div>
-                    <h3 class="titulo center">Sobre mim</h3>
+                    <h3 class="titulo titulo-sobre center">Sobre mim</h3>
                 </div>  
                 <div class="col s12 l4">
                     <div class="foto responsive-img">
@@ -62,9 +66,12 @@
                       <div class="collapsible-body"><span>Tenho conhecimento para trabalhar com: <br> JavaScript ES6; CSS3; HTML5, Git; Node.js; NPM; TypeScript; Angular; Sass; Bootstrap e Materialize.</span></div>
                     </li>
                     <li>
-                      <div class="collapsible-header"><i class="material-icons">cached</i>Cursos complementares</div>
-                      <div class="collapsible-body"><span> <strong>Em Infraestrutura:</strong> <br> Hardware para Servidores; Infraestrutura de Rede; Cisco Packet Tracer; Adm. Windows Server 2008; Adm. Windows Server 2012; Adm. Windows Server 2016; Servidor Linux (Debian); Linux Ubuntu Server. <br> <br> <strong>Em Desenvolvimento Web:</strong> <br>Desenvolvimento WEB com Javascript ES6, TypeScript e Angular 4. <br> Algoritmos; Banco de dados com MySQL; HTML5; PHP; POO PHP; Java; POO Java; Python; Git e GitHub.
-                        </span></div>
+                        <div class="collapsible-header">
+                            <i class="material-icons">cached</i>Cursos complementares
+                        </div>
+                        <div class="collapsible-body">
+                            <span> <strong>Em Infraestrutura:</strong> <br> Hardware para Servidores; Infraestrutura de Rede; Cisco Packet Tracer; Adm. Windows Server 2008; Adm. Windows Server 2012; Adm. Windows Server 2016; Servidor Linux (Debian); Linux Ubuntu Server. <br> <br> <strong>Em Desenvolvimento Web:</strong> <br>Desenvolvimento WEB com Javascript ES6, TypeScript e Angular 4. <br> Algoritmos; Banco de dados com MySQL; HTML5; PHP; POO PHP; Java; POO Java; Python; Git e GitHub.</span>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -75,25 +82,36 @@
     <section class="meusprojetos bloco scrollspy" id="meusprojetos">
         <article>
             <div class="container projetos">
-                <h3 class="titulo center">Meus Projetos</h3>
+                <h3 class="titulo titulo-proj center">Meus Projetos</h3>
                 <div class="row">
                     <!-- CARD SITES -->
-                    <article class="col s12 m6 l4 center">
+                    <div class="col s12 m6 l4 center">
                         <div class="card">
                             <div class="card-content">
                               <i class="material-icons large">aspect_ratio</i>
                               <h5>Desenvolvimento de Sites</h5>
                               <p>
-                                  Tenho alguns projetos de sites, onde utilizei ferramentas que me auxiliaram na criatividade e inovação, em toda sua construção.
+                                  Tenho alguns projetos de sites, onde utilizei ferramentas que me auxiliaram na criatividade e inovação, em toda construção.
                               </p>
                             </div>
                             <div class="card-action">
-                                <a href="#">Veja mais...</a>
+                                <a href="#sites-modal" class="modal-trigger">Veja mais...</a>
                             </div>
                         </div>
-                    </article>
+                    </div>
+                    <!-- MODAL SITES -->
+                    <div class="modal" id="sites-modal">
+                        <div class="modal-content">
+                            <h5 class="light black-text"> Qual a importância da nutrição? </h5>
+                            <p class="light black-text"> Seja por um estilo de vida saudável ou para eliminar peso, a preocupação com os alimentos é constante na rotina das pessoas. Por isso é importante saber comer e dar relevância ao que se come. Uma nutrição adequada pode prevenir doenças e tornar a vida mais saudável. </p>
+                        </div>
+                        <div class="modal-footer">
+                            <a class="btn modal-action modal-close"> Sair </a>
+                        </div>
+                    </div>
+
                     <!-- CARD INFRAESTRUTURA -->
-                    <article class="col s12 m6 l4 center">
+                    <div class="col s12 m6 l4 center">
                         <div class="card">
                             <div class="card-content">
                               <i class="material-icons large">folder_open</i>
@@ -103,12 +121,23 @@
                               </p>
                             </div>
                             <div class="card-action">
-                                <a href="#">Veja mais...</a>
+                                <a href="#infra-modal" class="modal-trigger">Veja mais...</a>
                             </div>
                         </div>
-                    </article>
+                    </div>
+                    <!-- MODAL INFRAESTRUTURA -->
+                    <div class="modal" id="infra-modal">
+                        <div class="modal-content">
+                            <h5 class="light black-text"> Qual a importância da nutrição? </h5>
+                            <p class="light black-text"> Seja por um estilo de vida saudável ou para eliminar peso, a preocupação com os alimentos é constante na rotina das pessoas. Por isso é importante saber comer e dar relevância ao que se come. Uma nutrição adequada pode prevenir doenças e tornar a vida mais saudável. </p>
+                        </div>
+                        <div class="modal-footer">
+                            <a class="btn modal-action modal-close"> Sair </a>
+                        </div>
+                    </div>
+
                     <!-- CARD DESENVOLVIMENTO APLICAÇÕES WEB -->
-                    <article class="col s12 m6 l4 center">
+                    <div class="col s12 m6 l4 center">
                         <div class="card">
                             <div class="card-content">
                               <i class="material-icons large">important_devices</i>
@@ -118,11 +147,21 @@
                               </p>
                             </div>
                             <div class="card-action">
-                                <a href="#">Veja mais...</a>
+                                <a href="#web-modal" class="modal-trigger">Veja mais...</a>
                             </div>
                           </div>
                         </div>
-                    </article>
+                    </div>
+                    <!-- MODAL APLICAÇÕES WEB -->
+                    <div class="modal" id="web-modal">
+                        <div class="modal-content">
+                            <h5 class="light black-text"> Qual a importância da nutrição? </h5>
+                            <p class="light black-text"> Seja por um estilo de vida saudável ou para eliminar peso, a preocupação com os alimentos é constante na rotina das pessoas. Por isso é importante saber comer e dar relevância ao que se come. Uma nutrição adequada pode prevenir doenças e tornar a vida mais saudável. </p>
+                        </div>
+                        <div class="modal-footer">
+                            <a class="btn modal-action modal-close"> Sair </a>
+                        </div>
+                    </div>
 
                 </div>    
             </div>
@@ -155,6 +194,7 @@
     <script type="text/javascript" src="js/app.js"></script>
 
     <!-- JAVASCRIPT -->
+    <script src="js/saudacao.js"></script>
     <script>
     $(document).ready(function(){
         //SCROLLSPY
