@@ -14,6 +14,7 @@ html, body{
 
 /* TÍTULO E PARÁGRAFO */
 .titulo{
+  color: #fff;
   font-size: 2rem;
   text-transform: uppercase;
   font-weight: 300;
@@ -31,13 +32,13 @@ html, body{
   content: '';
   display: block; 
   width: 200px;
-  border-top: 1px solid #000;
+  border-top: 1px solid #00ffff;
   margin: 15px auto;
 }
 
-
 .paragrafo{
-  line-height: 1.8rem;
+  font-size: 1.3rem;
+  line-height: 1.88rem;
 }
 
 /* APRESENTAÇÃO */
@@ -100,11 +101,13 @@ html, body{
 
 /* SOBRE MIM */
 .sobremim{
-  background: #CEECF5;
+  background-image: url('../img/bg-010.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .sobremim h3{
-  color: #1C1C1C;
+  color: #fff;
   margin: 0;
 }
 
@@ -115,9 +118,24 @@ html, body{
   padding-bottom: 20px;
 }
 
+.collapsible-header{
+  font-size: 1.3rem;
+}
+
+.collapsible-body{
+  background-image: url('../img/textura.png');
+  border: 1px solid #00ffff;
+}
+
+.collapsible-body span{
+  font-size: 1.2rem;
+}
+
 /* MEUS PROJETOS */
 .meusprojetos{
-  background: grey;
+  background-image: url('../img/bg-servicos.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 } 
 
 .meusprojetos .card {
@@ -137,6 +155,17 @@ html, body{
   background: #fff;
 }
 
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating) {
+  color: #c2185b;
+}
+
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating):hover {
+  color: #000;
+}
+
+.card .card-content p {
+  font-size: 1.2rem;
+}
 
 /* CUSTOMIZADO */
 .row{
