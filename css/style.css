@@ -88,10 +88,11 @@ a{
     }
   }
 
-/* BOTÃO HOME */
+/* BOTÕES NA HOME */
 .home .btn{
   color:  #00ffff;
   background-color:rgba(226,216,216, .2);
+  margin-bottom: 20px;
 }
 
 .home .btn:hover, .btn-large:hover, .btn-small:hover {
@@ -103,7 +104,7 @@ a{
   background-color: rgba(226,216,216, .2);
 }  
 
-/* SOBRE MIM */
+/* SEÇÃO SOBRE MIM */
 .sobremim{
   background-image: url('../img/bg-010.jpg');
   background-repeat: no-repeat;
