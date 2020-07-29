@@ -24,15 +24,7 @@ a{
   font-weight: 300;
 }
 
-.titulo-proj::after{
-  content: '';
-  display: block; 
-  width: 200px;
-  border-top: 1px solid #c2185b;
-  margin: 15px auto;
-}
-
-.titulo-sobre::after{
+.titulo::after{
   content: '';
   display: block; 
   width: 200px;
@@ -145,27 +137,28 @@ a{
 
 .meusprojetos .card {
   transition: 0.5s;
-  background: #eee;
+  background: #1c1c1c;
+  color: #fff;
 }
 .meusprojetos .card h5 {
   padding: 10px 0px;
 }
 .meusprojetos .card:hover i,
 .meusprojetos h5 {
-  color: #c2185b;
+  color: #00ffff;
 }
 
 .projetos .card:hover {
   transform: scale(1.03);
-  background: #fff;
+  background: #363636;
 }
 
 .card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating) {
-  color: #c2185b;
+  color: #00ffff;
 }
 
 .card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating):hover {
-  color: #000;
+  color: #fff;
 }
 
 .card .card-content p {
