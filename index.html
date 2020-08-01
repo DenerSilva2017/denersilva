@@ -14,8 +14,10 @@
     <!-- ÍCONES GOOGLE -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">  
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>  
+    <!-- WOW Animation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+     
 </head>
 
 <body onload="carregar()">
@@ -32,8 +34,8 @@
                 2. Serviços de Infraestrutura de Redes e Servidores. <br>
                 3. Desenvolvimento front-end de Sistemas Web.</p>
             <div>
-                <a href="#sobremim" class="waves-effect waves-light btn"> <i class="left fa fa-spinner fa-pulse fa-3x fa-fw"></i> Sobre mim</a>
-                <a href="#meusprojetos" class="waves-effect waves-light btn"> <i class=" left fa fa-cog fa-spin fa-3x fa-fw"></i> Meus projetos</a>
+                <a href="#sobremim" class="waves-effect waves-light btn"> Sobre mim</a>
+                <a href="#meusprojetos" class="waves-effect waves-light btn"> Meus projetos</a>
             </div>
         </div>
     </div>
@@ -46,7 +48,7 @@
                 <div>
                     <h3 class="titulo titulo-sobre center">Sobre mim</h3>
                 </div>  
-                <div class="col s12 l4">
+                <div class="animate__animated animate__backInLeft col s12 l4">
                     <div class="foto responsive-img">
                         <img class="materialboxed" width="200"  src="img/denersilva.png" alt="Dener Silva">
                     </div>
@@ -277,7 +279,11 @@
 
     <!-- JS MATERIALIZE -->
     <script src="js/materialize.js"></script>
-    
+
+    <!-- JS WOW ANIMATION -->
+    <script src="js/wow.min.js"></script>
+    <script> new WOW().init();</script>
+
     <!-- SCRIPT JAVASCRIP PARA O EFEITO PARTICLE.JS -->
     <script type="text/javascript" src="js/particles.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
