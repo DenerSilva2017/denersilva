@@ -88,15 +88,17 @@ a{
 }
 
 .home .btn:hover, .btn-large:hover, .btn-small:hover {
-  background-color: grey;
+  background-color: #1c1c1c;
 }  
 
 .home .btn:focus,.home .btn-large:focus,.home .btn-small:focus,
 .home .btn-floating:focus {
   background-color: rgba(226,216,216, .2);
-}  
+} 
+
 
 /* SEÇÃO ---> SOBRE MIM */
+
 .sobremim{
   background-image: url('../img/bg-010.jpg');
   background-repeat: no-repeat;
@@ -115,7 +117,8 @@ a{
   padding-bottom: 20px;
 }
 
-.collapsible-header{
+/* 
+  .collapsible-header{
   font-size: 1.3rem;
 }
 
@@ -127,6 +130,24 @@ a{
 .collapsible-body span{
   font-size: 1.2rem;
 }
+*/
+
+/* BOTÃO NO SOBRE MIM */
+.sobremim .btn{
+  color:  #00ffff;
+  background-color:rgba(226,216,216, .2);
+  margin-bottom: 20px;
+}
+
+.sobremim .btn:hover, .btn-large:hover, .btn-small:hover {
+  background-color: #1c1c1c;
+}  
+
+.sobremim .btn:focus,.sobremim .btn-large:focus,.sobremim .btn-small:focus,
+.sobremim .btn-floating:focus {
+  background-color: rgba(226,216,216, .2);
+} 
+
 
 /* SEÇÃO --->  MEUS PROJETOS */
 .meusprojetos{
