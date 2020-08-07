@@ -117,21 +117,6 @@ a{
   padding-bottom: 20px;
 }
 
-/* 
-  .collapsible-header{
-  font-size: 1.3rem;
-}
-
-.collapsible-body{
-  background-image: url('../img/textura.png');
-  border: 1px solid #00ffff;
-}
-
-.collapsible-body span{
-  font-size: 1.2rem;
-}
-*/
-
 /* BOTÃO NO SOBRE MIM */
 .sobremim .btn{
   color:  #00ffff;
@@ -149,28 +134,28 @@ a{
 } 
 
 
-/* SEÇÃO --->  MEUS PROJETOS */
-.meusprojetos{
+/* SEÇÃO --->  MINHAS HABILIDADES */
+.minhashabilidades{
   background-image: url('../img/bg-servicos.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 } 
 
-.meusprojetos .card {
+.minhashabilidades .card {
   box-shadow: 1px 1px 10px #00ffff;
   transition: 0.5s;
   background: #1c1c1c;
   color: #fff;
 }
-.meusprojetos .card h5 {
+.minhashabilidades .card h5 {
   padding: 10px 0px;
 }
-.meusprojetos .card:hover i,
-.meusprojetos h5 {
+.minhashabilidades .card:hover i,
+.minhashabilidades h5 {
   color: #00ffff;
 }
 
-.projetos .card:hover {
+.habilidades .card:hover {
   transform: scale(1.03);
   background: #2F4F4F;
 }
