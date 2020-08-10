@@ -144,23 +144,31 @@ a{
 .minhashabilidades .card {
   box-shadow: 1px 1px 10px #00ffff;
   transition: 0.5s;
-  background: #1c1c1c;
-  color: #fff;
+  background: #fff;
+  opacity: 0.6;
+  color: #000;
 }
 .minhashabilidades .card h5 {
   padding: 10px 0px;
+  color: #000;
 }
+
 .minhashabilidades .card:hover i,
-.minhashabilidades h5 {
+.minhashabilidades .card:hover h5 {
   color: #00ffff;
 }
 
 .habilidades .card:hover {
   transform: scale(1.03);
-  background: #2F4F4F;
+  background: #1c1c1c;
+  color: #fff;
 }
 
 .card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating) {
+  color: #000;
+}
+
+.card:hover .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating) {
   color: #00ffff;
 }
 
@@ -170,6 +178,12 @@ a{
 
 .card .card-content p {
   font-size: 1.2rem;
+}
+
+/* BOTÕES EM MINHAS HABILIDADES */
+
+.minhashabilidades .btn-black{
+  background-color: black;  
 }
 
 /* RODAPÉ */
