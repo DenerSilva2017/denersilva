@@ -144,13 +144,13 @@ a{
 .minhashabilidades .card {
   box-shadow: 1px 1px 10px #00ffff;
   transition: 0.5s;
-  background: #fff;
-  opacity: 0.6;
-  color: #000;
+  background: rgb(255, 252, 252);
+  color: #1c1c1c;
 }
+
 .minhashabilidades .card h5 {
   padding: 10px 0px;
-  color: #000;
+  color: #1c1c1c;
 }
 
 .minhashabilidades .card:hover i,
@@ -181,7 +181,6 @@ a{
 }
 
 /* BOTÕES EM MINHAS HABILIDADES */
-
 .minhashabilidades .btn-black{
   background-color: black;  
 }
