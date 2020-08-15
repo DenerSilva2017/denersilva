@@ -146,6 +146,11 @@ a{
   transition: 0.5s;
   background: rgb(240, 240, 240);
   color: #1c1c1c;
+  border-radius: 10px;
+}
+
+.minhashabilidades .card-action{
+  border-radius: 10px;
 }
 
 .minhashabilidades .card h5 {

@@ -4909,9 +4909,9 @@ small {
   padding: 16px 24px;
 }
 
-.card .card-action:last-child {
+/*.card .card-action:last-child {
   border-radius: 0 0 2px 2px;
-}
+}*/
 
 .card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating) {
   color: #ffab40;
