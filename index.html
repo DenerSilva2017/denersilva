@@ -15,9 +15,9 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>  
-    <!-- WOW Animation -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
-     
+    <!-- WOW ANIMAÇÃO -->
+    <link rel="stylesheet" href="css/animate.css">    
+
 </head>
 
 <body onload="carregar()">
@@ -25,7 +25,7 @@
     <section class="home scrollspy" id="home">
     <div id="particles-js">
         <div class="apresentacao container">
-            <h3 class="light">Dener Silva</h3>
+            <h3 class="wow fadeInUp light" data-wow-duration="4s" data-wow-delay="4s">Dener Silva</h3>
             <i><h6 class="digitado light">"A disciplina é a ponte entre a meta e o sucesso".</h6></i>
             <h5 class="light"> Olá, <span id="saudacao"></span></h5>  
             <p class="paragrafo light">
@@ -48,9 +48,9 @@
                 <div>
                     <h3 class="titulo titulo-sobre center">Sobre mim</h3>
                 </div>  
-                <div class="animate__animated animate__backInLeft col s12 l4">
+                <div class="col s12 l4">
                     <div class="foto responsive-img">
-                        <img class="materialboxed" width="200"  src="img/denersilva.png" alt="Dener Silva">
+                        <img class="wow bounceInUp materialboxed" width="200"  src="img/denersilva.png" alt="Dener Silva">
                     </div>
                 </div>
                 <div class="col s12 l8">
@@ -176,7 +176,7 @@
     <footer class="rodape">
         <div class="row container center">
             <p class="social">
-                <a href="https://www.facebook.com/denerffsilva" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.facebook.com/denerffsilva" target="_blank"><i class="wow bounceInUp light fab fa-facebook"></i></a>
                 <a href="https://www.linkedin.com/in/dener-silva/" target="_blank"><i class="fab fa-linkedin"></i></a>
                 <a href="https://github.com/DenerSilva2017" target="_blank"><i class="fab fa-github"></i></a>
             </p>
@@ -192,6 +192,12 @@
         </div>
     </footer>
 
+    
+    <!-- SCRIPTS -->
+    <!-- JS WOW -->
+    <script src = "js/wow.min.js"> </script>
+    <script src = "js/main.js"> </script>
+
     <!-- JS FONT AWESOME -->    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"></script>
 
@@ -206,7 +212,6 @@
          }
         const titulo = document.querySelector('.digitado');
         typeWriter(titulo);
-        //typeWriter(document.querySelector('h6'));
     </script>
 
     <!-- JQUERY  -->
@@ -214,10 +219,6 @@
 
     <!-- JS MATERIALIZE -->
     <script src="js/materialize.js"></script>
-
-    <!-- JS WOW ANIMATION -->
-    <script src="js/wow.min.js"></script>
-    <script> new WOW().init();</script>
 
     <!-- SCRIPT JAVASCRIP PARA O EFEITO PARTICLE.JS -->
     <script type="text/javascript" src="js/particles.js"></script>
@@ -240,5 +241,6 @@
         $(".modal").modal();
     }) 
     </script>
+
 </body>
 </html>
